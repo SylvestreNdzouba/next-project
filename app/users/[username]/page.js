@@ -33,7 +33,8 @@ const Page = async ({ params }) => {
             {userRepos.map((repo) => (
               <li key={repo.id} className="break-words">
                 <Link
-                  href={`/repositories/${repo.name}`}
+                  href={repo.html_url}
+                  target="_blank"
                   className="nes-text is-success"
                 >
                   {repo.name}
